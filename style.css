@@ -15,9 +15,9 @@ body {
 }
 
 .mobileSection {
-    background: url(images/bg2.png) no-repeat center center;
+    background: url(images/bg2.png) no-repeat center -16px;
     background-size: 110%;
-    width: 285px;
+    width: 300px;
     height: 600px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);

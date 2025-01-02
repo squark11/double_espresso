@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flexColumns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileSection {
+    background: url(images/bg2.png) no-repeat center center;
+    background-size: 110%;
+    width: 285px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.contentImages {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+}
+
+.logo {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    animation: pulse 2s infinite;
+}
+
+.copy {
+    margin-bottom: 22px;
+}
+
+.burgerSlider {
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.navArrows {
+    position: absolute;
+    top: 55px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.arrow {
+    cursor: pointer;
+    transition: transform 400ms ease;
+    z-index: 5;
+}
+.arrowRight {
+    transform: rotate(180deg);
+}
+
+.arrowLeft:hover{
+    transform: scale(1.2);
+}
+.arrowRight:hover {
+    transform: rotate(180deg) scale(1.2);
+}
+
+.burgerContent {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.names {
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    z-index: -1;
+}
+
+.leftName {
+    position: relative;
+    right: 20px;
+    animation: slideInLeft 0.8s ease-in-out;
+}
+
+.rightName {
+    position: relative;
+    left: 20px;
+    animation: slideInRight 0.8s ease-in-out;
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+}
+
+.burgerContent.exit-left {
+    transform: translateX(100%);
+}
+
+.burgerContent.exit-right {
+    transform: translateX(-100%);
+}
+
+.burgerContent.slide-left {
+    animation: slideBurger 0.8s ease-out;
+}
+
+.burgerContent.slide-right {
+    animation: slideBurgerLeft 0.8s ease-out;
+}
+
+.cta {
+    position: relative;
+    top: 25px;
+}
+
+.cta > img {
+    margin: auto;
+    display: block;
+}
+
+.cta:hover > img {
+    transition: 400ms;
+    transform: scale(1.1);
+}
+
+.background {
+    height: 280px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(40%) translateY(300%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-40%) translateY(300%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideBurger {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideBurgerLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

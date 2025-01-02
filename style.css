@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexColumns {
@@ -15,15 +20,13 @@ body {
 }
 
 .mobileSection {
-    background: url(images/bg2.png) no-repeat center -16px;
+    background: url(images/bg2.png) no-repeat center center;
     background-size: 110%;
-    width: 300px;
+    width: 285px;
     height: 600px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 20%;
-    left: 40%;
+    position: relative;
     overflow: hidden;
 }
 
